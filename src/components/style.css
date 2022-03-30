@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    background: #222f3e;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 4rem;
+}
+
+
+.green-btn {
+    color: #4cb458;
+    position: absolute;
+    right: 3%;
+    font-size: 1.8rem;
+    cursor: pointer;
+    top: 42%;
+}
+
+
+.searchDiv {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.input {width: 20%;display: flex;align-items: center;justify-content: center;position: relative;}
+
+.input input {
+    width: 100%;
+    height: 2rem;
+    padding: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    outline: #54a0ff;
+    margin-top: 1rem;
+}
+
+
+i.fa-solid.fa-plus {
+    position: absolute;
+    right: 3%;
+    font-size: 1.8rem;
+    cursor: pointer;
+    top: 42%;
+}
+
+i.fa-solid.fa-plus:hover {
+    color: #54a0ff;
+}
+
+.searchDiv h1 {
+    color: #fff;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    gap: 1rem;
+}
+
+.item {
+    display: flex;
+    cursor: pointer;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background: #576574;
+    color: #fff;
+    padding: 0 1rem;
+    height: 4rem;
+}
+
+.item p {
+    font-size: 1.5rem;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    font-size: 1.7rem;
+    
+}
+
+.item:hover {
+    background: #485058;
+}
+
+i.fa-solid.fa-pen-to-square:hover {
+    color: #4cb458;
+}
+
+i.fa-solid.fa-trash:hover {
+    color: red;
+}
+
+
+
+/* Responsive */
+
+
+@media (max-width: 991px) {
+    .input {
+        width: 30%;
+    }
+    .items {
+        width: 30%;
+    }
+}
+@media (max-width: 748px) {
+    html {
+        font-size: 55%;
+    }
+    .input {
+        width: 40%;
+    }
+    .items {
+        width: 40%;
+    }
+}
+@media (max-width: 500px) {
+    html {
+        font-size: 55%;
+    }
+    .input {
+        width: 50%;
+    }
+    .items {
+        width: 50%;
+    }
+}
+@media (max-width: 380px) {
+    html {
+        font-size: 55%;
+    }
+    .input {
+        width: 60%;
+    }
+    .items {
+        width: 60%;
+    }
+}
