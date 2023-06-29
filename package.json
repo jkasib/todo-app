@@ -1,5 +1,6 @@
 {
   "name": "todo-list",
+  "homepage": "https://jkasib.github.io/todo-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
